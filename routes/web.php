@@ -3,10 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -18,5 +19,7 @@ Route::middleware('auth')->group(function () {
 
 Route::view('/mentions-legales', 'pages.legal')->name('legal');
 Route::view('/Contact', 'pages.contact')->name('contact');
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 require __DIR__ . '/auth.php';

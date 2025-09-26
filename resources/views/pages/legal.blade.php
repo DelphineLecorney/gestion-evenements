@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
     <x-slot name="header">
         <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
             Mentions légales
@@ -13,6 +13,7 @@
         <p>Le site est hébergé par Laravel Forge / Vercel </p>
 
         <h3 class="text-lg font-bold">Données personnelles</h3>
-        <p>Aucune donnée personnelle n’est collectée sans consentement. Les informations sont utilisées uniquement pour la gestion des événements.</p>
+        <p>Aucune donnée personnelle n’est collectée sans consentement. Les informations sont utilisées uniquement pour
+            la gestion des événements.</p>
 
-</x-app-layout>
+</x-guest-layout>
