@@ -11,9 +11,8 @@ class DashboardController extends Controller
         $role = $request->user()->role;
 
         return match ($role) {
-            'admin' => view('dashboard.admin'),
-            'organisateur' => view('dashboard.organisateur'),
-            default => view('dashboard.participant'),
+            'admin' => view('admin.dashboard'),
+            default => view('user.dashboard'),
         };
     }
 }
