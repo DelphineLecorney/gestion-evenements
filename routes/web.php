@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\IsAdmin;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,4 +18,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::middleware(['auth', IsAdmin::class])->group(function () {
+    Route::get('/admin', function () {
+        return view('admin.dashboard');
+    });
+});
+
+require __DIR__ . '/auth.php';
