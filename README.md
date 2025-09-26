@@ -28,7 +28,7 @@ Une application web développée avec **Laravel 12** et **Breeze**, permettant a
 Voici quelques éléments visuels utilisés dans le projet :
 
 - **Logo du projet** : reflète les valeurs écologiques et locales
-![Home](assets/images/Favicon.png)
+![Logo](assets/images/logos/Favicon.png)
 - **Bannière d’accueil** : image d’en-tête sur la page `welcome`, avec slogan superposé
 ![Home](assets/images/Home.png)
 
