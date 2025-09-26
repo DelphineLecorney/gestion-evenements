@@ -7,7 +7,7 @@
     </x-slot>
 
     <div class="p-6">
-        <h1 class="text-2xl font-bold">Bienvenue Admin</h1>
+        <h1 class="text-2xl font-bold  text-gray-800 dark:text-gray-200">Bienvenue Admin</h1>
         <p>Tu peux gérer les événements ici.</p>
     </div>
 </x-app-layout>
