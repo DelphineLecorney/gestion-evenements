@@ -29,11 +29,11 @@ Voici quelques éléments visuels utilisés dans le projet :
 
 - **Logo du projet** : reflète les valeurs écologiques et locales
 
-![Logo](public\assets\images\logos\Favicon.png)
+![Logo](public/assets/images/logos/Favicon.png)
 
 - **Bannière d’accueil** : image d’en-tête sur la page `welcome`, avec slogan superposé
 
-![Home](public\assets\images\Home.png)
+![Home](public/assets/images/Home.png) 
 
 
 
